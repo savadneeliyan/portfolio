@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/savadneeliyan/portfolio/static/css/main.89e278a5.css",
+    "main.js": "/savadneeliyan/portfolio/static/js/main.cc0f958b.js",
+    "index.html": "/savadneeliyan/portfolio/index.html",
+    "main.89e278a5.css.map": "/savadneeliyan/portfolio/static/css/main.89e278a5.css.map",
+    "main.cc0f958b.js.map": "/savadneeliyan/portfolio/static/js/main.cc0f958b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89e278a5.css",
+    "static/js/main.cc0f958b.js"
+  ]
+}
