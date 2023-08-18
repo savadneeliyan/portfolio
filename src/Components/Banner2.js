@@ -82,7 +82,7 @@ function Banner2() {
             </Right>
             <Left>
               <Bar1 />
-              <Img src="/images/bg.png" alt="" />
+              <Img src="/images/bg.webp" alt="" />
               <Bar2 />
             </Left>
           </Wrapper>
