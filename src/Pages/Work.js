@@ -6,57 +6,52 @@ import styled from "styled-components";
 import Footer from "../Components/Footer";
 
 function Work() {
-
-const [click, setclick] = useState(true)
+  const [click, setclick] = useState(true);
 
   const handleClick = () => {
     setclick(false);
-  }
+  };
 
-const container = {
-  hidden: { opacity: 1, scale: 1 },
-  visible: {
-    transition: {
-      delayChildren: 1,
-      staggerChildren: .1,
-    }
-  }
-}
-  
-const item = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1
+  const container = {
+    hidden: { opacity: 1, scale: 1 },
+    visible: {
+      transition: {
+        delayChildren: 1,
+        staggerChildren: 0.1,
+      },
+    },
+  };
 
-  }
-}
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
 
-const project = [
-  {
-    url:"https://github.com/",
-    name:"spotify clone"
-  },
-  {
-    url:"https://github.com/",
-    name:"booking.com"
-  },
-  {
-    url:"https://github.com/",
-    name:"oyo clone"
-  },
-  {
-    url:"https://github.com/",
-    name:"olx clone"
-  },
-  {
-    url:"https://github.com/",
-    name:"Food delivery app"
-  }
-]
-
-
-
+  const project = [
+    {
+      url: "https://github.com/",
+      name: "spotify clone",
+    },
+    {
+      url: "https://github.com/",
+      name: "booking.com",
+    },
+    {
+      url: "https://github.com/",
+      name: "oyo clone",
+    },
+    {
+      url: "https://github.com/",
+      name: "olx clone",
+    },
+    {
+      url: "https://github.com/",
+      name: "Food delivery app",
+    },
+  ];
 
   return (
     <>
@@ -170,7 +165,9 @@ const project = [
             </List>
           </motion.ul>
         </motion.div>
-        <motion.div style={{ overflow: "hidden", maxWidth:"1200px",margin:"auto" }}>
+        <motion.div
+          style={{ overflow: "hidden", maxWidth: "1200px", margin: "auto" }}
+        >
           <motion.p
             style={{
               y: "20px",
@@ -194,26 +191,23 @@ const project = [
 
 export default Work;
 
-
-
-
 const Banner = styled(motion.div)`
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  height:100vh;
-  flex-direction:column;
-  background:url(/images/WorkBg.png);
-  background-repeat:no-repeat;
-  background-position:center center;
-  background-size:600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  background: url(/Images/WorkBg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 600px;
 `;
 
 const Title = styled(motion.h2)`
   text-align: center;
   color: #000;
-  font-size:100px;
-  line-height:110px;
+  font-size: 100px;
+  line-height: 110px;
 `;
 const Wrapper = styled(motion.div)`
   overflow: hidden;
@@ -221,9 +215,9 @@ const Wrapper = styled(motion.div)`
 `;
 
 const List = styled(motion.li)`
-  font-size:24px;
-  line-height:34px;
-  margin-bottom:20px;
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 20px;
   overflow: hidden;
   position: relative;
   width: fit-content;

@@ -1,12 +1,11 @@
-import React from 'react'
-import styled from 'styled-components'
-import { motion } from 'framer-motion';
+import React from "react";
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
 function Banner2() {
-
-    const scrollToSection = () => {
-        window.scrollTo({top: 500, left: 0, behavior: 'smooth'});
-      };
+  const scrollToSection = () => {
+    window.scrollTo({ top: 500, left: 0, behavior: "smooth" });
+  };
 
   return (
     <>
@@ -102,117 +101,112 @@ function Banner2() {
   );
 }
 
-export default Banner2
-
+export default Banner2;
 
 const Section = styled.div`
-    height: 100vh;
-    background-color: #f8f8f8;
-    color: #000;
-    display: flex;
-    align-items: center;
-    position: relative;
+  height: 100vh;
+  background-color: #f8f8f8;
+  color: #000;
+  display: flex;
+  align-items: center;
+  position: relative;
 `;
 
 const Container = styled(motion.div)`
-    max-width:1200px;
-    width:100%;
-    margin: auto;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
 `;
 
 const Wrapper = styled.div`
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
 `;
 
 const H1 = styled.h1`
-    overflow: hidden;
-    position: relative;
-    width: fit-content;
-    font-size: 40px;
-    line-height: 50px;
-    margin-bottom: 10px;
-    &::before{
-        content:"";
-        position: absolute;
-        top: 0;
-        transition: 0.5s linear;
-        height: 100%;
-        display: block;
-        background-color: #000;
-        height: 50px;
-        animation: slide 1s linear ; 
-    }
+  overflow: hidden;
+  position: relative;
+  width: fit-content;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 10px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    transition: 0.5s linear;
+    height: 100%;
+    display: block;
+    background-color: #000;
+    height: 50px;
+    animation: slide 1s linear;
+  }
 `;
 
 const PWrapper = styled.div`
-    overflow-y: hidden;
+  overflow-y: hidden;
 `;
 
 const P = styled.p`
-    position: relative;
-    width: fit-content;
-    font-size: 20px;
-    line-height: 20px;
-    margin-bottom: 10px;
-    height: 20px;
+  position: relative;
+  width: fit-content;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  height: 20px;
 
-    animation: slide-up 2s cubic-bezier(0.65, 0, 0.35, 1) both;
-
-    
+  animation: slide-up 2s cubic-bezier(0.65, 0, 0.35, 1) both;
 `;
 
 const Img = styled.img`
-    position: relative;
-    z-index:2;
-    animation: img 2s ; 
-    width:250px;
-
+  position: relative;
+  z-index: 2;
+  animation: img 2s;
+  width: 250px;
 `;
 
 const Right = styled.div`
-    width:62%;
+  width: 62%;
 `;
 
 const Left = styled.div`
-    position: relative;
+  position: relative;
 `;
 
 const Bar = styled.div`
-    width: 550px;
-    height: 60px;
-    transform: rotate(-45deg);
-    position: absolute;
-    top: 200px;
-    left: -140px;
-    z-index: 0;
-    &::before{
-        content: '';
-        width:100%;
-        height: 100%;
-        display: block;
-        background: #000;
-    }
+  width: 550px;
+  height: 60px;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 200px;
+  left: -140px;
+  z-index: 0;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #000;
+  }
 `;
 
 const Bar1 = styled(Bar)`
-    transform: rotate(-45deg);
-    &::before{
-        animation: width 0.8s ease-in;
-    }
+  transform: rotate(-45deg);
+  &::before {
+    animation: width 0.8s ease-in;
+  }
 `;
 
 const Bar2 = styled(Bar)`
-    transform: rotate(45deg);
-    &::before{
-        animation: width 0.5s ease-in;
-    }
-    
+  transform: rotate(45deg);
+  &::before {
+    animation: width 0.5s ease-in;
+  }
 `;
 
 const Span = styled(PWrapper)`
-    animation: slide-up 2s cubic-bezier(0.65, 0, 0.35, 1) both;
+  animation: slide-up 2s cubic-bezier(0.65, 0, 0.35, 1) both;
 `;
 
 const Anchor = styled.a`
@@ -224,21 +218,21 @@ const Anchor = styled.a`
   border: none;
   outline: none;
   color: #000;
-  margin-top:50px;
+  margin-top: 50px;
   display: block;
   text-decoration: none;
   padding: 20px 40px;
   z-index: 1;
   margin-left: 30px;
   width: fit-content;
-  display:flex;
+  display: flex;
   align-items: center;
-  gap:20px;
+  gap: 20px;
   animation: slide-up 2s cubic-bezier(0.65, 0, 0.35, 1) both;
 
-  &::after{
+  &::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 68px;
     height: 68px;
     background: #e8e8e8;
@@ -251,7 +245,7 @@ const Anchor = styled.a`
     border-radius: 50%;
     text-decoration: none;
   }
-  &:hover::after{
+  &:hover::after {
     width: 330px;
     height: 100%;
     right: -20px;
@@ -260,130 +254,127 @@ const Anchor = styled.a`
 `;
 
 const PWrapperBt = styled(PWrapper)`
-    margin-left:-30px;
+  margin-left: -30px;
 `;
 
 const List = styled.ul`
-    display:flex;
-    align-items:center;
-    gap:15px;
-    margin-top:30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
 
- @media only screen and (max-width: 768px){
-    display:none;
- }
-`
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+`;
 const ListItemWrapper = styled.div`
-    position: relative;
-    overflow-y: hidden;
-    padding: 5px 20px;
-    padding-left: 0;
-    z-index: 0;
-    &::before{
-        content:"";
-        position: absolute;
-        top: 0;
-        transition: 0.5s linear;
-        height: 100%;
-        display: block;
-        background-color: #000;
-        height: 25px;
-        animation: slide 1s linear ; 
-       
-    }
-    
+  position: relative;
+  overflow-y: hidden;
+  padding: 5px 20px;
+  padding-left: 0;
+  z-index: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    transition: 0.5s linear;
+    height: 100%;
+    display: block;
+    background-color: #000;
+    height: 25px;
+    animation: slide 1s linear;
+  }
 `;
 
 const ListItem = styled.li`
-    list-style-type:none;
-    color:white;
-    cursor:pointer;
-    animation: slide-up 2s cubic-bezier(0.65, 0, 0.35, 1) both;
+  list-style-type: none;
+  color: white;
+  cursor: pointer;
+  animation: slide-up 2s cubic-bezier(0.65, 0, 0.35, 1) both;
 `;
 
 const ListAnchor = styled.a`
-    text-decoration:none;
-    color:#515151;
-    font-size: 20px;        
-    transition: 0.5s linear;
+  text-decoration: none;
+  color: #515151;
+  font-size: 20px;
+  transition: 0.5s linear;
+  display: block;
+  position: relative;
+  &:hover {
+    transform: translateX(10px);
+    transition: 0.3s linear;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    background: #000;
+    height: 2px;
+    top: 50%;
+    left: -5px;
     display: block;
-    position: relative;
-    &:hover{
-        transform: translateX(10px);
-        transition: 0.3s linear;
-    }
-    &::before{
-        content: "";
-        position: absolute;
-        width: 0%;
-        background: #000;
-        height: 2px;
-        top: 50%;
-        left: -5px;
-        display: block;
-        transition: 0.5s linear;
-    }
-    &:hover::before{
-        width: 115%;
-        max-width: 150px;
-    }
+    transition: 0.5s linear;
+  }
+  &:hover::before {
+    width: 115%;
+    max-width: 150px;
+  }
 `;
 
 const Spans = styled.span`
-    overflow-y: hidden;
+  overflow-y: hidden;
 `;
 
 const Slash = styled.h3`
-    font-size: 25px;
-    font-weight: 300;
-    font-family: "Poppins";
-    color: #515151;
+  font-size: 25px;
+  font-weight: 300;
+  font-family: "Poppins";
+  color: #515151;
 `;
 
 const Circle = styled.div`
-    position: absolute;
+  position: absolute;
+  height: 450px;
+  width: 450px;
+  list-style-type: none;
+  outline: 3px solid #fff;
+  outline-offset: -2px;
+  display: block;
+  border-radius: 50%;
+  animation: growUp 1s;
+  background-color: #515151;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+  &::before {
+    content: "";
+    display: block;
     height: 450px;
     width: 450px;
-    list-style-type: none;
-    outline: 3px solid #fff;
-    outline-offset: -2px;
-    display:block;
+    background: #fff;
+    border: 3px solid #fff;
     border-radius: 50%;
-    animation: growUp 1s;
-    background-color: #515151;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    
-    &::before{
-        content: "";
-        display: block;
-        height: 450px;
-        width: 450px;
-        background: #fff;
-        border: 3px solid #fff;
-        border-radius: 50%;
-        animation: growDown 1s ease-in;
-    }
-
+    animation: growDown 1s ease-in;
+  }
 `;
 
 const ScrollDown = styled.div`
-    display: flex;
-    gap:20px;
-    align-items: center;
-    font-size: 20px;        
-    transition: 0.5s linear;
-    position: absolute;
-    transform: rotate(90deg);
-    right: 0%;
-    text-decoration: none;
-    color: #000;
-    cursor: pointer;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 20px;
+  transition: 0.5s linear;
+  position: absolute;
+  transform: rotate(90deg);
+  right: 0%;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
 
-    @media only screen and (min-width: 1900px) {
-        right: 15%;
-    }
+  @media only screen and (min-width: 1900px) {
+    right: 15%;
+  }
 `;

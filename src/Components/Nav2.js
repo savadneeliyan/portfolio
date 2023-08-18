@@ -1,7 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 function Nav2({ Dark }) {
   return (
@@ -36,7 +35,7 @@ function Nav2({ Dark }) {
           </List>
         </Links>
         {/* <Icons>
-                  <Icon src='./images/search.png'/>
+                  <Icon src='./Images/search.png'/>
                   <Button href='#contact'>Hire Now</Button>
               </Icons> */}
       </Container>
@@ -44,9 +43,7 @@ function Nav2({ Dark }) {
   );
 }
 
-export default Nav2
-
-
+export default Nav2;
 
 const Section = styled.div`
   display: flex;
