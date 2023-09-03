@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function Banner2() {
   const scrollToSection = () => {
@@ -45,7 +46,7 @@ function Banner2() {
                 <P>Developer based in the Kerela.</P>
               </PWrapper>
               <PWrapperBt>
-                <Anchor href="#">
+                <Anchor to="/work">
                   See My Work
                   <svg width="50" height="30" viewBox="0 0 10 6" fill="none">
                     <path
@@ -209,7 +210,7 @@ const Span = styled(PWrapper)`
   animation: slide-up 2s cubic-bezier(0.65, 0, 0.35, 1) both;
 `;
 
-const Anchor = styled.a`
+const Anchor = styled(Link)`
   text-decoration: none;
   font-size: 25px;
   text-transform: capitalize;
