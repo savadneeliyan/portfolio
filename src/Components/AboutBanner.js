@@ -229,7 +229,7 @@ function AboutBanner() {
             whileInView={{ y: 0 }}
             transition={{ delay: 1 }}
           >
-            A story of hardwork and perseverance.
+            A short detail about me.
           </motion.h2>
           <motion.div
             initial={{
