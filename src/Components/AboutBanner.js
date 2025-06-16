@@ -47,7 +47,7 @@ function AboutBanner() {
                 transition={{ delay: 1 }}
                 viewport={{ once: true }}
               >
-                I am a passionate front-end
+                Front-end developer by role,
               </Span>
               <motion.div
                 initial={{
@@ -69,7 +69,7 @@ function AboutBanner() {
                 transition={{ delay: 1 }}
                 viewport={{ once: true }}
               >
-                developer and ui/ux
+                problem solver by mindset.
               </Span>
               <motion.div
                 initial={{
@@ -84,7 +84,7 @@ function AboutBanner() {
                 viewport={{ once: true }}
               ></motion.div>
             </Head>
-            <Head>
+            {/* <Head>
               <Span
                 initial={{ color: "#fff", y: "40px" }}
                 whileInView={{ color: "#000", y: "0px" }}
@@ -127,7 +127,7 @@ function AboutBanner() {
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
               ></motion.div>
-            </Head>
+            </Head> */}
           </div>
           <Img>
             <motion.div
@@ -253,11 +253,17 @@ function AboutBanner() {
             whileInView={{ y: "0", opacity: 1 }}
             transition={{ delay: 1, duration: 0.5 }}
           >
-            My name is Mohammad Savad, and I am a self-taught front-end
+            {/* My name is Mohammad Savad, and I am a self-taught front-end
             developer with a passion for creating engaging and visually
             appealing websites. With expertise in HTML, CSS, JavaScript,
             Bootstrap, jQuery, PHP, Python, React, WordPress, MongoDB, Node, and
-            Express, I bring a diverse skill set to every project.
+            Express, I bring a diverse skill set to every project. */}
+            I'm Mohammad Savad, a self-taught front-end developer with a passion
+            for creating clean, engaging, and visually impactful web
+            experiences. With hands-on expertise in React, JavaScript, HTML,
+            CSS, Bootstrap, jQuery, and back-end tools like Python, Node.js,
+            Express, and MongoDB, I bring a versatile and adaptive skill set to
+            every project I take on.
           </Pera>
 
           <Pera
@@ -267,11 +273,13 @@ function AboutBanner() {
             transition={{ delay: 1, duration: 0.5 }}
           >
             {" "}
-            I have had the privilege of working with various companies,
-            including Limenzy, where I am currently employed. Additionally, I
-            have taken on freelance projects for clients such as Pearl, Soleil
-            Productions, and Alsalhya, delivering exceptional websites that meet
-            their unique requirements.
+            Over the past few years, I’ve worked with companies like Limenzy
+            Technologies, Lilac Infotech, and G3 Interactive, where I gained
+            hands-on experience across diverse tech stacks — from building
+            e-commerce sites with Shopify, WordPress, and WooCommerce to
+            developing dynamic, scalable applications using React. These roles
+            have strengthened my ability to adapt quickly, write clean code, and
+            deliver high-quality front-end solutions.
           </Pera>
 
           <Pera
@@ -286,7 +294,7 @@ function AboutBanner() {
             challenges they present.
           </Pera>
 
-          <Pera
+          {/* <Pera
             viewport={{ once: true }}
             initial={{ y: "20px" }}
             whileInView={{ y: "0", opacity: 1 }}
@@ -296,7 +304,7 @@ function AboutBanner() {
             crafting seamless user experiences that leave a lasting impression.
             With a keen eye for detail and a focus on delivering high-quality
             work, I strive to exceed expectations with each project.
-          </Pera>
+          </Pera> */}
 
           <Pera
             viewport={{ once: true }}

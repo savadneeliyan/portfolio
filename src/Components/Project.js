@@ -1,9 +1,8 @@
-import { motion } from 'framer-motion';
-import React, { useRef, useState } from 'react'
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import { data } from './ProjectData';
-
+import { motion } from "framer-motion";
+import React, { useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import { majorworks } from "./ProjectData";
 
 function Project({ setclick }) {
   const scrollElementsRef = useRef([]);
@@ -23,7 +22,6 @@ function Project({ setclick }) {
     // setclick(false);
   };
 
-  
   return (
     <>
       <Section
@@ -31,7 +29,7 @@ function Project({ setclick }) {
         whileInView={{ display: "block" }}
         viewport={{ once: true, amount: 1 }}
       >
-        {data.map((item, index) => (
+        {majorworks?.map((item, index) => (
           <Wrapper
             className={"hello" + index}
             key={index}
@@ -149,18 +147,17 @@ function Project({ setclick }) {
 
 export default Project;
 
-
 const Section = styled(motion.div)`
-    overflow: hidden;
+  overflow: hidden;
 `;
 const Container = styled.div`
-//   max-width: 1400px;
+  //   max-width: 1400px;
   width: 100%;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:65px 0;
+  padding: 65px 0;
 `;
 
 const Anchor = styled(Link)`
@@ -172,21 +169,21 @@ const Anchor = styled(Link)`
   border: none;
   outline: none;
   color: #000;
-  margin-top:50px;
+  margin-top: 50px;
   display: block;
   text-decoration: none;
   padding: 20px 40px;
   z-index: 1;
   width: fit-content;
-  display:flex;
+  display: flex;
   align-items: center;
   position: relative;
-  gap:20px;
+  gap: 20px;
   animation: slide-up 2s cubic-bezier(0.65, 0, 0.35, 1) both;
 
-  &::after{
+  &::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 50px;
     height: 50px;
     background: #e8e8e8;
@@ -202,41 +199,39 @@ const Anchor = styled(Link)`
 `;
 
 const PWrapperBt = styled(motion.div)`
-    overflow: hidden;
+  overflow: hidden;
 `;
 
 const H3 = styled(motion.h3)`
-    font-size:40px;
-    transition:0.5s ease;
-    color:#8f8e8e;
+  font-size: 40px;
+  transition: 0.5s ease;
+  color: #8f8e8e;
 `;
 
 const Span = styled(motion.div)`
-    font-size:15px;
-    transition:0.5s ease;
-    color:#8f8e8e;
-
-
+  font-size: 15px;
+  transition: 0.5s ease;
+  color: #8f8e8e;
 `;
 const ImgWrapper = styled(motion.div)`
-    width:461px;
-    height:300px;
-    position:absolute;
-    right:23px;
-    transition:0.5s ease;
-    cursor: pointer;
-    &::before{
-      width: 0px;
-      height: 210px;
-      transition:0.5s ease;
-      content:'';
-      right: 0px;
-      top: 148px;
-      background:#000;
-      position:absolute;
-      display: inline-block;
-      transition-delay: .1s;
-    }
+  width: 461px;
+  height: 300px;
+  position: absolute;
+  right: 23px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  &::before {
+    width: 0px;
+    height: 210px;
+    transition: 0.5s ease;
+    content: "";
+    right: 0px;
+    top: 148px;
+    background: #000;
+    position: absolute;
+    display: inline-block;
+    transition-delay: 0.1s;
+  }
 `;
 
 const Img = styled(motion.img)`
@@ -248,57 +243,57 @@ const Img = styled(motion.img)`
 `;
 
 const FirstContainer = styled(motion.div)`
-    display:flex;
-    align-items: center;
-    gap:20px;
-    &::before{
-      content:'';
-      width:150px;
-      transition:0.5s ease;
-      height:1px;
-      background:#000;
-    }
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  &::before {
+    content: "";
+    width: 150px;
+    transition: 0.5s ease;
+    height: 1px;
+    background: #000;
+  }
 `;
 
 const Wrapper = styled.div`
-    background-color: #f8f8f8;
+  background-color: #f8f8f8;
+  color: #000;
+  transition: 0.5s linear;
+  border-bottom: 1px solid #e8e8e8;
+  pointer-events: ${(props) => (props.isClicked ? "none" : "all")};
+
+  &:hover {
+    background-color: #fff;
+  }
+
+  &:hover ${Anchor}::after {
+    width: 230px;
+    height: 100%;
+    right: 0px;
+    border-radius: 40px;
+  }
+
+  &:hover ${Img} {
+    width: 430px;
+  }
+  &:hover ${ImgWrapper} {
+    width: 430px;
+    &::before {
+      width: 390px;
+      right: 100px;
+    }
+  }
+  &:hover ${Span} {
+    font-size: 20px;
     color: #000;
-    transition:0.5s linear;
-    border-bottom: 1px solid #e8e8e8;
-    pointer-events: ${props => props.isClicked ? "none" : "all"};;
-    
-    &:hover{
-        background-color: #fff;
+  }
+  &:hover ${H3} {
+    font-size: 70px;
+    color: #000;
+  }
+  &:hover ${FirstContainer} {
+    &::before {
+      width: 200px;
     }
-
-    &:hover ${Anchor}::after{
-        width: 230px;
-        height: 100%;
-        right: 0px;
-        border-radius: 40px;
-    }
-
-    &:hover ${Img}{
-        width: 430px;
-    }
-    &:hover ${ImgWrapper}{
-        width: 430px;
-        &::before{
-            width:390px;
-            right: 100px;
-        }
-    }
-    &:hover ${Span}{
-        font-size:20px;
-        color:#000;
-    }
-    &:hover ${H3}{
-        font-size:70px;
-        color:#000;
-    }
-    &:hover ${FirstContainer}{
-        &::before {
-            width:200px;
-        }
-    }
+  }
 `;

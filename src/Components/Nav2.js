@@ -13,7 +13,7 @@ function Nav2({ Dark }) {
           <List style={{ gap: "20px" }}>
             <ListItemWrapper>
               <ListItem>
-                <ListAnchor Dark={Dark} to="/us">
+                <ListAnchor Dark={Dark} to="/about-me">
                   <Span>About</Span>
                 </ListAnchor>
               </ListItem>
