@@ -60,7 +60,7 @@ function Banner2() {
                 <ListItemWrapper>
                   <ListItem>
                     <ListAnchor
-                      href="https://www.linkedin.com/in/savad-neeliyan-702749217/"
+                      href="https://www.linkedin.com/in/savadneeliyan/"
                       target="_blank"
                     >
                       Linkdln{" "}

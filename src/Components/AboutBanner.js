@@ -747,7 +747,7 @@ function AboutBanner() {
           </div>
         </div>
       </motion.div>
-      <motion.div style={{ margin: "50px auto 100px", maxWidth: "800px" }}>
+      {/* <motion.div style={{ margin: "50px auto 100px", maxWidth: "800px" }}>
         <div
           style={{
             marginBottom: "30px",
@@ -809,7 +809,7 @@ function AboutBanner() {
             transition={{ duration: 1 }}
           ></motion.div>
         </div>
-      </motion.div>
+      </motion.div> */}
     </>
   );
 }

@@ -95,6 +95,30 @@ function Work() {
           key={"exit"}
           exit={{ opacity: 0 }}
         >
+          <motion.div style={{ overflow: "hidden" }}>
+            <motion.p
+              style={{
+                y: "20px",
+                margin: "30px 0",
+                fontSize: "25px",
+                lineHeight: "40px",
+                opacity: 0,
+              }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 1, duration: 1 }}
+            >
+              Other projects have been omitted as they were either confidential
+              or have since been overhauled.
+            </motion.p>
+          </motion.div>
+
+        </motion.div>
+        <motion.div
+          style={{ width: "1200px", margin: "100px auto" }}
+          key={"exit"}
+          exit={{ opacity: 0 }}
+        >
           <motion.div
             style={{
               overflow: "hidden",
